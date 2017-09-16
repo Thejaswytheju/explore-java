@@ -49,5 +49,12 @@ public class EmployeeTest {
         Assert.assertEquals(e3Hash, e1HashValue);
     }
 
+    @Test
+    public void constructor() {
+        Employee e= new Employee("theja");
+        System.out.println(e.getName());
+
+    }
+
 
 }
