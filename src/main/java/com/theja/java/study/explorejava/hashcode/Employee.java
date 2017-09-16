@@ -18,6 +18,8 @@ public class Employee {
     }
 
     public Employee(String name1, Long id, String dept) {
+        super();
+        System.out.println("In side Employee");
         name = name1;
         this.id = id;
         this.dept = dept;
