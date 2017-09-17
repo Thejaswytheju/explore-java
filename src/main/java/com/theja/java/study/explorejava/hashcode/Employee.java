@@ -1,6 +1,7 @@
 package com.theja.java.study.explorejava.hashcode;
 
 public class Employee {
+
     protected String name;
     Long id;
     private String dept;
@@ -50,5 +51,16 @@ public class Employee {
 
     public void setDept(String dept) {
         this.dept = dept;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("\n{name: "+name);
+        if(id != null) {
+            sb.append("\nid: "+id.longValue());
+        }
+        sb.append("\ndept: "+dept+"}");
+        return sb.toString();
     }
 }
