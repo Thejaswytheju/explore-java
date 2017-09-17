@@ -21,7 +21,9 @@ public class Employee2 extends Employee {
 
     @Override
     public int hashCode() {
-        return 100;
+        int superHash = super.hashCode();
+        superHash = super.id.hashCode() + superHash;
+        return 100 + superHash;
     }
 
     @Override

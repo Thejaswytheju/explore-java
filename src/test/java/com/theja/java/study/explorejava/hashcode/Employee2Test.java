@@ -20,7 +20,7 @@ public class Employee2Test {
         Employee2 e2=new Employee2();
         int e1hashvalue=e1.hashCode();
         int e2hashvalue=e2.hashCode();
-        Assert.assertEquals(e1hashvalue, e2hashvalue);
+        Assert.assertNotEquals(e1hashvalue, e2hashvalue);
     }
 
 }

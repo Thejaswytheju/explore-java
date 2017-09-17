@@ -1,9 +1,11 @@
 package com.theja.java.study.explorejava.hashcode;
 
 public class Employee {
-    String name;
+    protected String name;
     Long id;
-    String dept;
+    private String dept;
+
+    private Employee manager;
 
     public Employee() {
     }
@@ -23,6 +25,7 @@ public class Employee {
         name = name1;
         this.id = id;
         this.dept = dept;
+       // manager.name = "xyz";
     }
 
     public String getName() {

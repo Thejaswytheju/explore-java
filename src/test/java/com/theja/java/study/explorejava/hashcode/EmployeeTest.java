@@ -15,6 +15,10 @@ public class EmployeeTest {
 
     @Test
     public void getName() {
+        cut.name = "abcd";
+        // error
+        // cut.dept="xyz";
+        Assert.assertEquals("theja", cut.getName());
         cut.setName("theja");
         String name = cut.getName();
         Assert.assertEquals("theja", name);

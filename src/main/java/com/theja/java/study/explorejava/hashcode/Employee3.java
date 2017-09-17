@@ -31,7 +31,7 @@ public class Employee3 extends Employee2 {
             return false;
         }
 
-        if (other.dept != this.dept) {
+        if (other.getDept() != this.getDept()) {
             return false;
         }
         if (other.name != this.name) {
