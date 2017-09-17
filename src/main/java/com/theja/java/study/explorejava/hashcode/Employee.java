@@ -1,6 +1,6 @@
 package com.theja.java.study.explorejava.hashcode;
 
-public class Employee {
+public class Employee implements Comparable<Employee>{
 
     protected String name;
     Long id;
@@ -62,5 +62,21 @@ public class Employee {
         }
         sb.append("\ndept: "+dept+"}");
         return sb.toString();
+    }
+
+    public int compareTo(Employee o) {
+        if(o == null) {
+            return 1;
+        }
+        if(this.getName() != null) {
+            return -(this.getName().compareTo(o.getName()));
+        }
+        if(this.getDept() != null) {
+            return this.getDept().compareTo(o.getDept());
+        }
+        if(this.getId() != null) {
+            this.getId().compareTo(o.getId());
+        }
+        return 0;
     }
 }
