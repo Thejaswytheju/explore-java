@@ -20,6 +20,6 @@ public class Employee7SetTest {
         set.add(e3);
         set.add(e4);
         Assert.assertEquals(2, set.size());
-        System.out.println("Emploee set withou duplicates is:\n"+set);
+        System.out.println("Emploee set without duplicates is:\n"+set);
     }
 }
