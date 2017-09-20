@@ -13,7 +13,6 @@ public class Employee7SetTest {
         Employee e1 = new Employee7("aaa", 1L, "cse");
         Employee e2 = new Employee7("ccc", 1L, "cse");
         Employee e5 = new Employee7("ccc", 1L, "cse");
-
         Employee e3 = new Employee7("aaa", 1L, "cse");
         Employee e4 = new Employee7("bbb", 1L, "cse");
         set.add(e1);
@@ -49,7 +48,6 @@ public class Employee7SetTest {
         Employee e1 = new Employee7("aaa", 1L, "cse");
         Employee e2 = new Employee7("ccc", 1L, "cse");
         Employee e5 = new Employee7("ccc", 1L, "cse");
-
         Employee e3 = new Employee7("aaa", 1L, "cse");
         Employee e4 = new Employee7("bbb", 1L, "cse");
         set.add(e1);
