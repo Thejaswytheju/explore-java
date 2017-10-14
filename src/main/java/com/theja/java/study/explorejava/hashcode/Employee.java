@@ -69,7 +69,7 @@ public class Employee implements Comparable<Employee>{
             return 1;
         }
         if(this.getName() != null) {
-            return -(this.getName().compareTo(o.getName()));
+            return (this.getName().compareTo(o.getName()));
         }
         if(this.getDept() != null) {
             return this.getDept().compareTo(o.getDept());
