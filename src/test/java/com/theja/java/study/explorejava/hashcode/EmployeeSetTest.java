@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class EmployeeSetTest {
@@ -21,6 +22,20 @@ public class EmployeeSetTest {
         employeeSet.add(e1);
         employeeSet.add(e3);
         Assert.assertEquals(2, employeeSet.size());
+        System.out.println("All employees are:");
+        if(employeeSet != null) {
+            for (Employee e : employeeSet) {
+                System.out.println(e);
+            }
+        }
+        System.out.println("All employees with iterator are:");
+
+        Iterator<Employee> it = employeeSet.iterator();
+           while (it.hasNext()) {
+               Employee e = it.next();
+               System.out.println(e);
+           }
+
     }
     @Test
     public void setExample2() {
